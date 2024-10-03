@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            padding: 8px;
+            margin-top: 5px;
+            width: 100%;
+        }
+        .checkbox-group, .radio-group {
+            display: flex;
+            flex-direction: column;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4c78af;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4566a0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <div>
+        <form id="registrationForm" action="">
+            <div>
+                <label for="inputNome">Nome:</label>
+                <input type="text" id="inputNome" name="name" required>
+            </div>
+            <div>
+                <label for="inputEmail">Email:</label>
+                <input type="email" id="inputEmail" name="email" required>
+            </div>
+            <div>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+            </div>
+            <div>
+                <label for="dob">Data de Nascimento:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div>
+                <label>Gênero:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="masculino" required> Masculino</label>
+                    <label><input type="radio" name="gender" value="feminino"> Feminino</label>
+                    <label><input type="radio" name="gender" value="outro"> Outro</label>
+                </div>
+            </div>
+            <div>
+                <label for="city">Cidade:</label>
+                <select id="city" name="city" required>
+                    <option value="">Selecione uma cidade</option>
+                    <option value="União_dos_Palmares">União dos Palmares</option>
+                    <option value="Murici">Murici</option>
+                    <option value="São_José_da_Laje">São José da Laje</option>
+                    <option value="Maceió">Maceió</option>
+                </select>
+            </div>
+            <div>
+                <label>Linguagem de Interesse:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="interests" value="Python"> Python</label>
+                    <label><input type="checkbox" name="interests" value="Java"> Java</label>
+                    <label><input type="checkbox" name="interests" value="PHP"> PHP</label>
+                    <label><input type="checkbox" name="interests" value="Kotlin"> Kotlin</label>
+                </div>
+            </div>
+            <div>
+                <label for="quantity">Quantidade de Produtos:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+            </div>
+            <div>
+                <label for="observations">Observações Adicionais:</label>
+                <textarea id="observations" name="observations" rows="4"></textarea>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>

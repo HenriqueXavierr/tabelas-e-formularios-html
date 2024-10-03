@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Notas</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Controle de Notas dos Alunos</h1>
+    <h3>Lista de Notas e Classificação dos Discentes</h3>
+    <table>
+        <caption>Controle de Notas e Classificação dos Alunos</caption>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">NOME</th>
+                <th scope="col" colspan="2">NOTAS</th>
+                <th scope="col" rowspan="2">MÉDIA FINAL</th>
+                <th scope="col" rowspan="2">CLASSIFICAÇÃO</th>
+            </tr>
+            <tr>
+                <th scope="col">1° NOTA</th>
+                <th scope="col">2° NOTA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aparecida</td>
+                <td>10</td>
+                <td>9,5</td>
+                <td>9,75</td>
+                <td>1º Lugar</td>
+            </tr>
+            <tr>
+                <td>Felipe</td>
+                <td>8,5</td>
+                <td>7,5</td>
+                <td>8</td>
+                <td>2º Lugar</td>
+            </tr>
+            <tr>
+                <td>Julio</td>
+                <td>5,5</td>
+                <td>6,5</td>
+                <td>6</td>
+                <td>3º Lugar</td>
+            </tr>
+            <tr>
+                <td colspan="2">Jéssica</td>
+                <td>3</td> 
+                <td>1,5</td>
+                <td>Não classificada</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
